@@ -7,19 +7,15 @@ void query( unsigned int n );
 void evaluation( int n );
 
 
-
 int main( void ){
-
 
 	unsigned int answer1, answer2, answer3, answer4, answer5;
 	int yourScore;
-
 
 	printf("--------------------WARM UP--------------------\n");
 	printf("Test your knowledge of global temperature change and its impact on Earth's climate.\n\n");
 
 	
-
 	do{
 
 		printf("1-) How do scientists collect evidence about climate?\n\n");
@@ -30,10 +26,7 @@ int main( void ){
 
 	}while( answer1 > 4 || answer1 < 1 );
 
-	
 	puts("******************************************************************************************************");
-
-
 
 
 	do{
@@ -44,12 +37,10 @@ int main( void ){
 
 		query( answer2 );
 
-
 	}while( answer2 > 4 || answer2 < 1 );
 
 
 	puts("******************************************************************************************************");
-
 
 
 	do{
@@ -57,15 +48,12 @@ int main( void ){
 		printf("\n3-) Which of the following gases does not trap heat? \n\n");
 		printf("1- Carbon dioxide \n2- Nitrogen \n3- Water vapor \n4- Methane \n");	
 		scanf("%u", &answer3 );
-
 		query( answer3 );
-
 
 	}while( answer3 > 4 || answer3 < 1 );
 
 
 	puts("******************************************************************************************************");
-
 
 
 	do{
@@ -76,12 +64,10 @@ int main( void ){
 
 		query( answer4 );
 
-
 	}while( answer4 > 4 || answer4 < 1 );
 
 
 	puts("******************************************************************************************************");
-
 
 
 	do{
@@ -91,7 +77,6 @@ int main( void ){
 		scanf("%u", &answer5 );
 
 		query( answer5 );
-
 
 	}while( answer5 > 4 || answer5 < 1 );
 
@@ -106,34 +91,24 @@ int main( void ){
 
 	evaluation( yourScore );
 	puts("");
-
-
 }
 
 
 
-
-
-
 void query( unsigned int n ){
-
 	
 	if( n > 4 || n < 1 ){
 
 		printf("Please enter an answer between 1 and 4\n");
 		puts("---------------------------------------------------------------------------------------------------------");
 	}
-
 }
-
 
 
 int answerChech( unsigned int x, unsigned int y, unsigned int z, unsigned int t, unsigned int n ){
 
-	
 	int counter;
 	counter = 0;
-
 
 	if( x == 4 ){
 
@@ -160,33 +135,25 @@ int answerChech( unsigned int x, unsigned int y, unsigned int z, unsigned int t,
 		++counter;
 	}
 
-
 	return counter;
-
 }
 
 
-
 void evaluation( int n ){
-
-	
 
 	if( n == 5 ){
 
 		printf("Excellent");
 	}
 
-
 	else if( n == 4 ){
 
 		printf("Very good");
 	}
 
-
 	else{
 
 		printf("Time to brush up on your knowledge of global warming");
 	}
-
 }
 
